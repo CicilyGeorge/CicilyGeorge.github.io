@@ -1,0 +1,276 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Settings</title>
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="style.css" rel="stylesheet" />
+
+</head>
+<body>
+
+	<div id="hr-foot" class="row"></div>
+	<nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto col-lg-12">
+				<li class="nav-item active offset-lg-1 col-lg-2">
+					<a class="nav-link" href="index.html"><span class="fas fa-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-folder-plus" aria-hidden="true"></span> New RASRA</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-folder-open" aria-hidden="true"></span> Submitted Requests</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-users" aria-hidden="true"></span> User Management</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-cog" aria-hidden="true"></span> Settings</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!-- End of Header Section -->
+
+
+
+<div class="container-fluid">
+	<div class="container page-content my-3">
+		<h3 class="page-head col-12 text-center my-3"><b>Newmont Boddington Gold Request to Access Security Retricted Area</b></h3>
+		<h2 class="text-center mb-4"><b>Settings</b></h2>
+		<div id="settings">
+			<form method="post" action="">
+				<h5><b>Approval Authorised Personnel</b></h5><br/>
+					<div class="row mb-1">
+						<div class="col-md-3 col-sm-6">
+							<label id="lblAdmin1"><p>Process Admin 1</p></label>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<select  id="cmbAdmin1" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+							</select>
+						</div>
+					</div>
+					<div class="row mb-1">
+						<div class="col-md-3 col-sm-6">
+							<label id="lblAdmin2"><p>Process Admin 2</p></label>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<select  id="cmbAdmin2" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+							</select>
+						</div>
+					</div>
+					<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblSI">Superintendent Gold & recovery Services</label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbSI" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1 py-2 bg-secondary">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblDSI"><p>Delegated Superintendent Gold & recovery Services</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbDSI" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 text-md-right">
+						<label id="lblDSIperiod"><p>Applicable Period</p></label>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1">
+						<input class="form-control" id="dtpDSIstart" type="text" placeholder="Start Date"/>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 align-items-start">
+						<input class="form-control" id="dtpDSIend" type="text"  placeholder="End Date"/>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblMgr"><p>Process Manager</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbMgr" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1 mb-1 py-2 bg-secondary">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblDMgr"><p>Delegated Process Manager</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbDMgr" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 text-md-right">
+						<label id="lblMgrperiod"><p>Applicable Period</p></label>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1">
+						<input class="form-control" id="dtpDMgrStart" type="text" placeholder="Start Date"/>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 align-items-start">
+						<input class="form-control" id="dtpDMgrEnd" type="text"  placeholder="End Date"/>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblGM"><p>GM</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbGM" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1 mb-1 py-2 bg-secondary">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblGM"><p>Delegated GM</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbDGM" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 text-md-right">
+						<label id="lblDGMperiod"><p>Applicable Period</p></label>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1">
+						<input class="form-control" id="dtpDGMstart" type="text" placeholder="Start Date"/>
+					</div>
+					<div class="col-md-2 col-sm-3 mt-1 align-items-start">
+						<input class="form-control" id="dtpDGMend" type="text"  placeholder="End Date"/>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI1"><p>Access Implementer 1</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI1" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI2"><p>Access Implementer 2</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI2" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI3"><p>Access Implementer 3</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI3" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI4"><p>Access Implementer 4</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI4" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI1"><p>Access Implementer 5</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI5" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>
+				<div class="row mb-1">
+					<div class="col-md-3 col-sm-6">
+						<label id="lblAI6"><p>Access Implementer 6</p></label>
+					</div>
+					<div class="col-md-3 col-sm-6">
+						<select  id="cmbAI6" class="browser-default custom-select dropdown">
+								<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+				</div>	
+				<br/>
+				<div class="row mb-1">
+					<div class="col-md-12 text-right">
+						<input id="btnSave" class="btn btn-dark btn-outline-warning mr-5" type="submit" value="Save" />
+					</div>
+				</div>	
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function () {
+
+                $("#dtpDSIstart").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDSIend").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDMgrStart").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDMgrEnd").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDGMstart").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+                
+                $("#dtpDGMend").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+	});
+</script>
+</html>

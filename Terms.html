@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Terms</title>
+<link rel="stylesheet" href="bootstrap.min.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="style.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div id="hr-foot" class="row"></div>
+	<nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+	
+		<div class="collapse navbar-collapse" id="navbarColor01">
+			<ul class="navbar-nav mr-auto col-lg-12">
+				<li class="nav-item active offset-lg-1 col-lg-2">
+					<a class="nav-link" href="index.html"><span class="fas fa-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-folder-plus" aria-hidden="true"></span> New RASRA</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-folder-open" aria-hidden="true"></span> Submitted Requests</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-users" aria-hidden="true"></span> User Management</a>
+				</li>
+				<li class="nav-item col-lg-2">
+					<a class="nav-link" href="#"><span class="fas fa-cog" aria-hidden="true"></span> Settings</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+<!-- End of Header Section -->
+
+
+
+<div class="container-fluid">
+	<div class="container page-content my-3">
+		<h3 class="page-head col-12 text-center my-3"><b>Newmont Boddington Gold Request to Access Security Retricted Area</b></h3>
+		<h5 class="text-center my-2"><b>Terms and Condition of Entry into Security Restricted Areas</b></h5><br/>
+	
+		<p>I understand that access to the Security Restricted Areas to which I have requested access in this document is
+		limited to authorised persons and subject to NGB Security Procedures. As a condition of access to the Security
+		Restricted Areas (SRA):
+		</p>
+		<ul>
+			<li>
+				<p>I have submitted a National Police History Check prior to authorisation being granted to enter NGB Site
+				and NGB SRA.</p>
+			</li>
+			<li>
+				<p>I consent to NGB sharing details regarding my employment with the WAPOL and other law enforcement
+				agencies from time to time.</p>
+			</li>
+			<li>
+				<p>I understand that NGB has the right to refuse entry into a SRA or revoke previously granted access at
+				any time and that NGB is under no obligation to provide the reasons for such a refusal.</p>
+			</li>
+			<li>
+				<p>I consent to having my person and / or property, goods and materials taken into a SRA searched whilst
+				entering and/or leaving the area and at any time whilst in the SRA. I understand that refusal to allow
+				such searches may result in disciplinary action including termination of my employment and possible
+				referral to law enforcement agencies for further investigation.</p>
+			</li>
+			<li>
+				<p>I understand that the materials that can be taken into a SRA are restricted and understand that NGB has
+				the right to restrict the taking in of certain materials or may seal those materials before they can be
+				taken in.</p>
+			</li>
+			<li>
+				<p>I consent to comply with all NGB Security Procedures related to SRA. I understand that refusal to allow
+				such searches may result in disciplinary action including termination of my employment and possible
+				referral to the law enforcement agencies for further investigation.</p>
+			</li>
+			<li>
+				<p>I understand that unauthorised removal of gold bearing ore or other materials in any form or the
+				concealment of gold bearing or other materials in any form shall result in termination of my employment
+				and referral to law enforcement agencies for possible prosecution.</p>
+			</li>
+		</ul>
+		<form method="post" action="">
+			<table width="100%">
+				<tr>
+					<td width="10%"></td>
+					<td width="10%" class="mr-5">
+						<label id="lblName" class="pt-4">Name</p></label>
+					</td>
+					<td width="50%">
+						<input id="txtName" name="txtName" type="text" width="95%"/>
+					</td>
+					<td width="10%" class="mr-5">
+						<label id="lblDate" class="pt-4">Date</p></label>
+					</td>
+					<td width="30%" class="text-right">
+						<input id="dtpTermsAcceptDate" name="dtpTermsAcceptDate" type="text" width="95%"/>
+					</td>
+				</tr>
+			</table>
+			<div class="row">
+				<input class="offset-1 col-1" name="chkRead" type="checkbox" />
+				<label class="col-10" id="lblRead">I have read, understand and accept the terms and condition of entry as outlines above</label>
+			</div>
+			<div class="row">
+				<input class="offset-1 col-1" name="chkRead" type="checkbox" />
+				<label class="col-md-7 col-sm-6" id="lblRead">Paperwork with wet signature submitted</label>
+				<input id="btnUpload" name="btnUpload" type="button" value="Upload" class="col-md-1 col-sm-2 btn btn-dark btn-outline-warning my-sm-0" />
+			</div>
+			<div class="form-buttons text-center mt-5">
+				<input id="btnSubmit" name="btnSubmit" type="submit" value="Accept" class="btn btn-dark btn-outline-warning my-4 my-sm-0 mr-5"/>
+				<input id="btnCancel" name="btnCancel" type="button" value="Cancel"  class="btn btn-dark btn-outline-warning my-4 my-sm-0"/>
+			</div>	
+		</form>
+	</div>
+	<hr/>
+</div>
+</body>
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function () {
+
+                $("#dtpTermsAcceptDate").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+	});
+</script>
+</html>

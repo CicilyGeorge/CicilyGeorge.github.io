@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>approval</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link href="bootstrap.min.css" rel="stylesheet" />
+<link href="style.css" rel="stylesheet" />
+<style>
+    #accordion {
+        background-color: lightgray;
+    }
+
+    #accordion h5 {
+        background-color: gray;
+        padding: 10px 15px;
+    }
+    
+    .accordion-body {
+        padding: 10px;
+    }
+      
+    .last-col{
+        position: relative;
+    }
+    
+    .last-row {
+        position: absolute;
+        bottom: 0px;
+    }
+    
+    @media only screen and (max-width: 992px) {
+        .last-row {
+            position: relative;
+            bottom: auto;
+        }
+    }
+    </style>
+</head>
+<body>
+
+<div id="hr-foot" class="row"></div>
+<nav class="row navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto col-lg-12">
+            <li class="nav-item active offset-lg-1 col-lg-2">
+                <a class="nav-link" href="index.html"><span class="fas fa-home" aria-hidden="true"></span> Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#"><span class="fas fa-folder-plus" aria-hidden="true"></span> New RASRA</a>
+            </li>
+            <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#"><span class="fas fa-folder-open" aria-hidden="true"></span> Submitted Requests</a>
+            </li>
+            <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#"><span class="fas fa-users" aria-hidden="true"></span> User Management</a>
+            </li>
+            <li class="nav-item col-lg-2">
+                <a class="nav-link" href="#"><span class="fas fa-cog" aria-hidden="true"></span> Settings</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- End of Header Section -->
+
+
+<div class="container-fluid page-content m-3">
+    <h3 class="page-head col-12 text-center my-4"><b>Newmont Boddington Gold Request to Access Security Retricted Area</b></h3>
+	<div id="approval">
+		<div class="row">
+	        <label class="control-label offset-md-3 col-sm-3" for="lblRequester">Requester Name</label>
+	        <input class="form-control col-sm-3 mb-1" id="txtRequester" type="text" value="" disabled />
+	    </div>
+	
+		<div class="row">
+		    <label class="control-label offset-md-3 col-sm-3" for="lblPeriod">Access Period</label>
+		    <input class="form-control col-sm-3 mb-4" id="txtPeriod" type="text" value="" disabled />
+		</div>
+		    
+		<div id="accordion">
+			<h5>Process Admin Initial Check</h5>
+			<div class="accordion-body">
+				<form id="formAdmin" method="post" action="">
+                            <div class="row form-group">
+                                <label class="control-label col-lg-3 col-md-12 col-sm-12" for="All_submitted_document_sighted_and_checked_for_validity_and_completeness">All submitted document sighted and checked for validity and completeness</label>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input class="radio-button col-1" id="Document" name="Document" type="radio" value="Good Document" />
+                                            <label class="col-10">Requester comply and Document in Good Working order</label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="radio-button col-1" id="Document" name="Document" type="radio" value="Not Comply Document" />
+                                            <label class="col-10">Requester does not comply with requirement</label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="radio-button col-1" id="Document" name="Document" type="radio" value="Missing Document" />
+                                            <label class="col-10 mb-5">Missing/Incomplete Document</label>
+                                        </div>
+                                        <label class="control-label col-sm-6" id="lblAdminCheck">Check & Validation Completed By</label>
+                                        <input class="form-control col-sm-6 mb-2" id="ValidationBy" name="ValidationBy" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                    <label class="control-label col-sm-2" id="lblAdminCheck">Notes</label>
+                                        <textarea class="form-control col-sm-9 mb-4" cols="20" id="Notes" name="Notes" rows="4"></textarea>
+                                        <div class="row last-row col-lg-12 col-sm-12 mt-sm-2 mt-lg-4">
+                                            <label class="control-label col-sm-2 pt-2" id="lblAdminCheck">Date</label>
+                                            <input class="form-control col-md-4 col-sm-4 mb-1" id="dtpAdminCheck" name="Date" type="text" value="" />
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-3 text-right">
+                                                <input type="submit" value="submit" class="btn btn-dark btn-outline-warning my-sm-0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+				</form>
+			</div>
+			
+			<h5>Superintendent Gold & Recovery Authorisation</h5>
+			<div class="accordion-body">
+                    <div class="row form-group">
+                        <label class="control-label col-lg-3 col-md-12 col-sm-12">Access Level</label>
+                        <select  id="cmbSIAccessLevel" class="col-lg-4 col-md-12 col-sm-12 browser-default custom-select dropdown">
+		        			<option value="" disabled selected>Choose your option</option>
+						</select>
+					</div>
+					<div class="row form-group">
+						<label class="control-label col-lg-3 col-md-12 col-sm-12">Access authorisation</label>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Approved" />
+                                            <label class="control-label">Approved</label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Rejected" />
+                                            <label class="control-label">Rejected</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                        <textarea class="form-control col-sm-12" cols="20" id="Notes" name="Notes" rows="2">Notes</textarea>
+                                    </div>
+                                </div>
+					</div>	
+					<div class="row form-group">
+								<label class="control-label offset-lg-3 col-lg-9" id="lblSIDecl">
+									<i>I hereby authorised/not authuthorised the person named in this application to access the restricted area for the period specified.</i>
+								</label>
+
+                                <div class="offset-lg-3 col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <label class="control-label col-sm-4 text-left" id="lblSICheck">Approved By</label>
+                                        <input class="form-control col-sm-6" id="ValidationBy" name="ValidationBy" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                        <div class="row last-row col-lg-12 col-sm-12">
+                                            <label class="control-label col-sm-2" id="lblAdminCheck">Date</label>
+                                            <input class="form-control col-md-4 col-sm-4" id="dtpAdminCheck" name="Date" type="text" value="" />
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-3 align-items-right">
+                                                <input type="submit" value="submit" class="btn btn-dark" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+					</div>	
+			</div>
+			
+			<h5>Process Manager Authorisation</h5>
+			<div class="accordion-body">
+					<div class="row form-group">
+						<label class="control-label col-lg-3 col-md-12 col-sm-12">Access authorisation</label>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Approved" />
+                                            <label class="control-label">Approved</label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Rejected" />
+                                            <label class="control-label">Rejected</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                        <textarea class="form-control col-sm-12" cols="20" id="Notes" name="Notes" rows="2">Notes</textarea>
+                                    </div>
+                                </div>
+					</div>	
+					<div class="row form-group">
+								<label class="control-label offset-lg-3 col-lg-9" id="lblSIDecl">
+									<i>I hereby authorised/not authuthorised the person named in this application to access the restricted area for the period specified.</i>
+								</label>
+
+                                <div class="offset-lg-3 col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <label class="control-label col-sm-4 text-left" id="lblSICheck">Approved By</label>
+                                        <input class="form-control col-sm-6" id="ValidationBy" name="ValidationBy" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                        <div class="row last-row col-lg-12 col-sm-12">
+                                            <label class="control-label col-sm-2" id="lblAdminCheck">Date</label>
+                                            <input class="form-control col-md-4 col-sm-4" id="dtpAdminCheck" name="Date" type="text" value="" />
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-3 align-items-right">
+                                                <input type="submit" value="submit" class="btn-dark btn-outline-warning my-sm-0" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+					</div>	
+			</div>
+			
+			
+			<h5>General Manager Authorisation</h5>
+			<div class="accordion-body">
+					<div class="row form-group">
+						<label class="control-label col-lg-3 col-md-12 col-sm-12">Access authorisation</label>
+                                <div class="col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row text-left">
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Approved" />
+                                            <label class="control-label">Approved</label>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input class="radio-button" id="Document" name="Document" type="radio" value="Rejected" />
+                                            <label class="control-label">Rejected</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"></div>
+					</div>	
+					<div class="row form-group">
+								<textarea class="form-control offset-lg-3 col-lg-9" cols="20" id="Notes" name="Notes" rows="2">Notes</textarea>
+								<label class="control-label offset-lg-3 col-lg-9" id="lblSIDecl">
+									<i><br/>I hereby authorised/not authuthorised the person named in this application to access the restricted area for the period specified.</i>
+								</label>
+                                <div class="offset-lg-3 col-lg-4 col-md-12 col-sm-12">
+                                    <div class="row">
+                                        <label class="control-label col-sm-4 text-left" id="lblSICheck">Approved By</label>
+                                        <input class="form-control col-sm-6" id="ValidationBy" name="ValidationBy" type="text" value="" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-12 col-sm-12 last-col">
+                                    <div class="row">
+                                        <div class="row last-row col-lg-12 col-sm-12">
+                                            <label class="control-label col-sm-2" id="lblAdminCheck">Date</label>
+                                            <input class="form-control col-md-4 col-sm-4" id="dtpAdminCheck" name="Date" type="text" value="" />
+                                            <div class="col-sm-1"></div>
+                                            <div class="col-sm-3 align-items-right">
+                                                <input type="submit" value="submit" class="btn btn-dark" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+					</div>	
+			</div>	
+
+			<h5>Access Implementation</h5>
+			<div class="accordion-body">
+			</div>
+		</div>			
+	</div>
+</div>
+</body>
+<script src="jquery-3.5.1.slim.min.js"></script>
+<script src="bootstrap.bundle.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function () {
+	
+				$( "#accordion" ).accordion({
+      				heightStyle: "content"
+    			});
+
+                $("#dtpAdminCheck").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDSIend").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDMgrStart").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDMgrEnd").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+                $("#dtpDGMstart").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+                
+                $("#dtpDGMend").datepicker({
+                    changeMonth: true,
+                    changeYear: true,
+                    format: "dd/mm/yyyy"
+                });
+
+	});
+</script>
+
+</html>
